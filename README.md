@@ -60,6 +60,6 @@
 <details>
   <summary><b><img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> GitHub Stats</b></summary>
 
-[![Github Stats By Swing](https://github-readme-stats-git-masterorgs-github-readme-stats-team.vercel.app/api?username=winmin&include_orgs=true&hide_title=false&hide_border=true&show_icons=true&include_all_commits=true&line_height=20&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=default)](https://github.com/winmin)
+[![Github Stats](https://github-readme-stats.vercel.app/api?username=winmin&include_orgs=true&hide_title=false&hide_border=true&show_icons=true&include_all_commits=true&line_height=20&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=default)](https://github.com/winmin)
 
 </details>
