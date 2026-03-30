@@ -1,6 +1,6 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=36BCF7FF&width=500&lines=Security+Researcher;CTF+Player+%40FlappyPig+%40r3kapig;Focus+on+Vulnerability+Discovering)](https://bestwing.me)
 
-![CVEs](https://img.shields.io/badge/CVEs-44+-red?style=for-the-badge)
+![CVEs](https://img.shields.io/badge/CVEs-47+-red?style=for-the-badge)
 ![](https://img.shields.io/badge/PWN-Reverse-blue?style=for-the-badge)
 [![Blog](https://img.shields.io/badge/Blog-bestwing.me-green?style=for-the-badge)](https://bestwing.me)
 [![Twitter](https://img.shields.io/badge/Twitter-@bestswngs-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/bestswngs)
@@ -43,7 +43,7 @@
 
 **XIAOMI**: [CVE-2020-14102](https://privacy.mi.com/trust#/security/vulnerability-management/vulnerability-announcement/detail?id=23&locale=zh)
 
-**Linux Kernel**: [CVE-2021-4001](https://access.redhat.com/security/cve/CVE-2021-4001) | CVE-2025-38477 | CVE-2025-40083 | CVE-2025-68325 | [CVE-2026-22977](https://vulert.com/vuln-db/net--sock--fix-hardened-usercopy-panic-in-sock-recv-errqueue) | CVE-2026-23276 | CVE-2026-23277
+**Linux Kernel**: [CVE-2021-4001](https://access.redhat.com/security/cve/CVE-2021-4001) | CVE-2025-38477 | CVE-2025-40083 | CVE-2025-68325 | [CVE-2026-22977](https://vulert.com/vuln-db/net--sock--fix-hardened-usercopy-panic-in-sock-recv-errqueue) | CVE-2026-23276 | CVE-2026-23277 | CVE-2026-23396 | CVE-2026-23397 | CVE-2026-23398
 
 **Netgear**: [CVE-2021-45527](https://kb.netgear.com/000064493/Security-Advisory-for-Post-Authentication-Buffer-Overflow-on-Some-Routers-Extenders-and-WiFi-Systems-PSV-2020-0437) | [CVE-2023-36187](https://kb.netgear.com/000065571/Security-Advisory-for-Pre-Authentication-Buffer-Overflow-on-Some-Routers-PSV-2020-0578)
 
