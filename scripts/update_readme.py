@@ -9,56 +9,48 @@ from html.parser import HTMLParser
 
 
 class AboutPageParser(HTMLParser):
-    """Parse the about page to extract vendor-grouped CVEs."""
+    """Parse the about page to extract vendor-grouped CVEs.
+
+    The blog groups CVEs under an ``<h2>VUL LIST</h2>`` section, with each
+    vendor introduced by an ``<h3>Vendor</h3>`` heading followed by a list of
+    ``<a class="cve-badge" href="...">CVE-...</a>`` (or link-less ``<span>``)
+    badges.
+    """
 
     def __init__(self):
         super().__init__()
         self.in_vul_section = False
         self.current_vendor = None
         self.vendors = OrderedDict()
-        self.current_tag = None
-        self.current_attrs = {}
         self.current_href = None
-        self.buffer = ""
-        self.found_vul_header = False
-        # Track bold/strong tags for vendor names
-        self.in_bold = False
-        self.bold_text = ""
+        # Track h3 headings for vendor names
+        self.in_h3 = False
+        self.h3_text = ""
 
     def handle_starttag(self, tag, attrs):
-        self.current_tag = tag
-        self.current_attrs = dict(attrs)
-        if tag in ("b", "strong"):
-            self.in_bold = True
-            self.bold_text = ""
-        if tag == "a":
-            self.current_href = self.current_attrs.get("href", "")
+        attrs = dict(attrs)
+        if tag == "h3":
+            self.in_h3 = True
+            self.h3_text = ""
+        elif tag == "a":
+            self.current_href = attrs.get("href")
 
     def handle_endtag(self, tag):
-        if tag in ("b", "strong") and self.in_bold:
-            self.in_bold = False
-            if self.in_vul_section and self.bold_text.strip():
-                vendor = self.bold_text.strip().rstrip(":")
-                if vendor and not any(
-                    skip in vendor.lower()
-                    for skip in ["other", "tip", "0x300"]
-                ):
+        if tag == "h3" and self.in_h3:
+            self.in_h3 = False
+            if self.in_vul_section:
+                vendor = self.h3_text.strip()
+                if vendor:
                     self.current_vendor = vendor
-                    if vendor not in self.vendors:
-                        self.vendors[vendor] = []
-                elif "other" in vendor.lower():
-                    self.current_vendor = "Other"
-                    if "Other" not in self.vendors:
-                        self.vendors["Other"] = []
-        if tag == "a":
+                    self.vendors.setdefault(vendor, [])
+        elif tag == "a":
             self.current_href = None
-        self.current_tag = None
 
     def handle_data(self, data):
-        if self.in_bold:
-            self.bold_text += data
+        if self.in_h3:
+            self.h3_text += data
 
-        # Detect VUL LIST header
+        # Detect VUL LIST header (lives in an <h2>, before any vendor <h3>)
         if "VUL LIST" in data:
             self.in_vul_section = True
             return
@@ -66,27 +58,18 @@ class AboutPageParser(HTMLParser):
         if not self.in_vul_section:
             return
 
-        # Extract CVEs from text
+        # Extract CVEs from the current badge's text
         cves = re.findall(r"CVE-\d{4}-\d{4,}", data)
-        if cves and self.current_vendor:
-            for cve in cves:
-                href = self.current_href if self.current_tag == "a" else None
-                entry = {"cve": cve, "url": href}
-                # Avoid duplicates
-                existing_cves = [e["cve"] for e in self.vendors.get(self.current_vendor, [])]
-                if cve not in existing_cves:
-                    if self.current_vendor not in self.vendors:
-                        self.vendors[self.current_vendor] = []
-                    self.vendors[self.current_vendor].append(entry)
-        elif cves and not self.current_vendor:
-            # CVEs before any vendor heading go to Other
-            if "Other" not in self.vendors:
-                self.vendors["Other"] = []
-            for cve in cves:
-                href = self.current_href if self.current_tag == "a" else None
-                existing_cves = [e["cve"] for e in self.vendors["Other"]]
-                if cve not in existing_cves:
-                    self.vendors["Other"].append({"cve": cve, "url": href})
+        if not cves:
+            return
+
+        vendor = self.current_vendor or "Other"
+        self.vendors.setdefault(vendor, [])
+        existing = {e["cve"] for e in self.vendors[vendor]}
+        for cve in cves:
+            if cve not in existing:
+                self.vendors[vendor].append({"cve": cve, "url": self.current_href})
+                existing.add(cve)
 
 
 def fetch_page(url):
