@@ -157,7 +157,9 @@ def generate_impact_summary(total, vendor_counts):
     kernel_count = vendor_counts.get("Linux Kernel", 0)
     return (
         f"> **{total} public CVEs** across **{active_vendors} ecosystems**, "
-        f"including **{kernel_count} Linux kernel findings**."
+        f"including **{kernel_count} Linux kernel findings**.<br>"
+        f"**公开披露 {total} 个 CVE**，覆盖 **{active_vendors} 个研究生态**，"
+        f"其中包括 **{kernel_count} 个 Linux 内核漏洞**。"
     )
 
 

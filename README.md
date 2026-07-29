@@ -6,69 +6,78 @@
   </picture>
 
   <p>
-    <a href="https://bestwing.me"><b>Blog ↗</b></a>
+    <a href="https://bestwing.me"><b>Blog / 博客 ↗</b></a>
     ·
     <a href="https://twitter.com/bestswngs"><b>X ↗</b></a>
     ·
-    <a href="#disclosure-archive"><b>CVEs ↓</b></a>
+    <a href="#disclosure-archive"><b>CVEs / 漏洞档案 ↓</b></a>
   </p>
 </div>
 
-## About
+## About / 关于
 
 I research vulnerabilities in the **Linux kernel**, **embedded systems**, and **network appliances**. My work spans source auditing, fuzzing, exploit development, and responsible disclosure.
 
-CTF player with [FlappyPig](https://github.com/FlappyPig) and [r3kapig](http://r3kapig.com/).
+我专注于 **Linux 内核**、**嵌入式系统**与**网络设备**的漏洞研究，涉及源码审计、模糊测试、漏洞利用开发与负责任披露。
+
+CTF player with [FlappyPig](https://github.com/FlappyPig) and [r3kapig](http://r3kapig.com/).<br>
+同时是 [FlappyPig](https://github.com/FlappyPig) 与 [r3kapig](http://r3kapig.com/) 战队成员。
 
 <!-- IMPACT_START -->
-> **85 public CVEs** across **11 ecosystems**, including **47 Linux kernel findings**.
+> **85 public CVEs** across **11 ecosystems**, including **47 Linux kernel findings**.<br>**公开披露 85 个 CVE**，覆盖 **11 个研究生态**，其中包括 **47 个 Linux 内核漏洞**。
 <!-- IMPACT_END -->
 
-## Selected research
+## Selected research / 精选研究
 
 - [**PackageKit TOCTOU Local Privilege Escalation**](https://bestwing.me/CVE-2026-41651-analysis.html)<br>
-  <sub>Linux · TOCTOU · Local privilege escalation</sub>
+  <sub>PackageKit TOCTOU 本地提权漏洞分析 · Linux · TOCTOU</sub>
 
 - [**Xiaomi: From ADB Service Call to Bootloader Unlock**](https://bestwing.me/preempted-unlocking-xiaomi-via-two-unsanitized-strings.html)<br>
-  <sub>Android · Qualcomm · Bootloader security</sub>
+  <sub>从 ADB Service Call 到解锁 Bootloader · Android · Qualcomm</sub>
 
 - [**ASUS IoT: Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
-  <sub>IoT · Router · Vulnerability research</sub>
+  <sub>华硕 IoT 设备安全研究 · IoT · Router</sub>
 
-## Focus
+## Focus / 研究方向
 
-- **Surfaces** — Linux kernel, embedded devices, IoT, and network appliances
-- **Methods** — source auditing, fuzzing, reverse engineering, and exploit development
-- **Practice** — PWN, CTF, root-cause analysis, and responsible disclosure
+- **Surfaces** — Linux kernel, embedded devices, IoT, and network appliances<br>
+  **研究对象** — Linux 内核、嵌入式设备、IoT 与网络设备
+- **Methods** — source auditing, fuzzing, reverse engineering, and exploit development<br>
+  **研究方法** — 源码审计、模糊测试、逆向工程与漏洞利用开发
+- **Practice** — PWN, CTF, root-cause analysis, and responsible disclosure<br>
+  **实践领域** — PWN、CTF、根因分析与负责任披露
 
-## Recognition
+## Recognition / 荣誉
 
-- **2025 · 1st place** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛
-- **2024 · Two 1st-place finishes** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛、矩阵杯国产软硬件安全检测赛
-- **2023 · Champion** — 跃哥我真不会啊 · Datacon 漏洞分析赛道<br>
-  **2nd place** — 0x300 · CSST 天网杯
+- **2025 · 1st place / 第一名** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛
+- **2024 · Two 1st-place finishes / 两项第一名** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛、矩阵杯国产软硬件安全检测赛
+- **2023 · Champion / 冠军** — 跃哥我真不会啊 · Datacon 漏洞分析赛道<br>
+  **2nd place / 第二名** — 0x300 · CSST 天网杯
 
 <details>
-<summary><b>Earlier recognition</b> · 2018–2021</summary>
+<summary><b>Earlier recognition / 早期荣誉</b> · 2018–2021</summary>
 
-- **2021 · 2nd place** — 0x300 · 首届信创关键产品安全挑战赛<br>
-  **Best Vulnerability Reproduction** — 天府杯 · Docker Escape & Ubuntu LPE
+- **2021 · 2nd place / 第二名** — 0x300 · 首届信创关键产品安全挑战赛<br>
+  **Best Vulnerability Reproduction / 最佳漏洞复现奖** — 天府杯 · Docker Escape & Ubuntu LPE
 - **2019** — Chaitin · GeekPwn & HUAWEI Smart Device Security Challenge · MAXHUB Exploit
-- **2018 · Best Demo Award** — Piggy mine · GeekPwn
+- **2018 · Best Demo Award / 最佳演示奖** — Piggy mine · GeekPwn
 
 </details>
 
-## Publications
+## Publications / 出版物
 
-- **《CTF特训营：技术详解、解题方法与竞赛技巧》** — *Author*
-- **《硬件系统模糊测试技术解密与案例分析》** — *Translator*
+- **《CTF特训营：技术详解、解题方法与竞赛技巧》** — *Author / 作者*
+- **《硬件系统模糊测试技术解密与案例分析》** — *Translator / 译者*
 
-## Disclosure archive
+<a id="disclosure-archive"></a>
 
-The archive below is synchronized from [bestwing.me](https://bestwing.me/about/) every week.
+## Disclosure archive / 漏洞档案
+
+The archive below is synchronized from [bestwing.me](https://bestwing.me/about/) every week.<br>
+以下漏洞档案每周从 [bestwing.me](https://bestwing.me/about/) 自动同步。
 
 <details>
-<summary><b>Browse the complete CVE index</b> · grouped by vendor</summary>
+<summary><b>Browse the complete CVE index / 查看完整 CVE 索引</b> · grouped by vendor / 按厂商分类</summary>
 
 <br />
 
@@ -97,7 +106,7 @@ The archive below is synchronized from [bestwing.me](https://bestwing.me/about/)
 
 <!-- CVE_END -->
 
-### Acknowledgements
+### Acknowledgements / 致谢
 
 - **Synology** — [2021 Security Bounty Acknowledgement](https://www.synology.com/zh-tw/security/bounty_program#acknowledgement)
 - **OPPO** — 2021 IoT Bug Bounty [Top 18](https://security.oppo.com/cn/charts)
@@ -107,5 +116,5 @@ The archive below is synchronized from [bestwing.me](https://bestwing.me/about/)
 ---
 
 <div align="center">
-  <sub><b>KNOW IT. HACK IT.</b> · Research responsibly. Disclose clearly. · <a href="https://bestwing.me">bestwing.me</a></sub>
+  <sub><b>KNOW IT. HACK IT.</b> · Research responsibly. Disclose clearly. / 负责任地研究，清晰地披露。 · <a href="https://bestwing.me">bestwing.me</a></sub>
 </div>
