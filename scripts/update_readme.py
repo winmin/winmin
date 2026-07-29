@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fetch CVE data from blog and update README.md."""
+"""Fetch CVE data from the blog and update both profile README languages."""
 
 import json
 import re
@@ -151,19 +151,30 @@ def generate_cve_section(vendors):
     return total, "\n".join(lines)
 
 
-def generate_impact_summary(total, vendor_counts):
-    """Generate the compact research-impact sentence shown near the profile intro."""
+def generate_impact_summary(total, vendor_counts, language="en"):
+    """Generate the localized research-impact sentence shown near the profile intro."""
     active_vendors = sum(1 for count in vendor_counts.values() if count)
     kernel_count = vendor_counts.get("Linux Kernel", 0)
+
+    if language == "zh-CN":
+        return (
+            f"> **公开披露 {total} 个 CVE**，覆盖 **{active_vendors} 个研究生态**，"
+            f"其中包括 **{kernel_count} 个 Linux 内核漏洞**。"
+        )
+
     return (
         f"> **{total} public CVEs** across **{active_vendors} ecosystems**, "
-        f"including **{kernel_count} Linux kernel findings**.<br>"
-        f"**公开披露 {total} 个 CVE**，覆盖 **{active_vendors} 个研究生态**，"
-        f"其中包括 **{kernel_count} 个 Linux 内核漏洞**。"
+        f"including **{kernel_count} Linux kernel findings**."
     )
 
 
-def update_readme(readme_path, cve_section, total, vendor_counts=None):
+def update_readme(
+    readme_path,
+    cve_section,
+    total,
+    vendor_counts=None,
+    impact_language="en",
+):
     with open(readme_path, "r") as f:
         content = f.read()
 
@@ -182,7 +193,7 @@ def update_readme(readme_path, cve_section, total, vendor_counts=None):
     # Update the concise impact line used by the redesigned profile.
     if vendor_counts is not None:
         impact_pattern = r"(<!-- IMPACT_START -->).*?(<!-- IMPACT_END -->)"
-        impact = generate_impact_summary(total, vendor_counts)
+        impact = generate_impact_summary(total, vendor_counts, impact_language)
         content = re.sub(
             impact_pattern,
             f"\\1\n{impact}\n\\2",
@@ -196,7 +207,10 @@ def update_readme(readme_path, cve_section, total, vendor_counts=None):
 
 def main():
     blog_url = "https://bestwing.me/about/"
-    readme_path = "README.md"
+    readme_paths = (
+        ("README.md", "en"),
+        ("README.zh-CN.md", "zh-CN"),
+    )
 
     print(f"Fetching {blog_url} ...")
     html = fetch_page(blog_url)
@@ -222,9 +236,16 @@ def main():
         json.dump({"count": total, "vendors": vendor_counts}, f, indent=2)
     print("Updated cve-count.json")
 
-    # Update README
-    update_readme(readme_path, cve_section, total, vendor_counts)
-    print("Updated README.md")
+    # Keep the default English profile and Chinese translation in sync.
+    for readme_path, language in readme_paths:
+        update_readme(
+            readme_path,
+            cve_section,
+            total,
+            vendor_counts,
+            impact_language=language,
+        )
+        print(f"Updated {readme_path}")
 
 
 if __name__ == "__main__":

@@ -1,78 +1,80 @@
 <div align="right">
-  <sub>Language: <b>English</b> · <a href="./README.zh-CN.md">简体中文</a></sub>
+  <sub>语言：<a href="./README.md">English</a> · <b>简体中文</b></sub>
 </div>
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
-    <img src="./assets/hero-dark.svg" width="100%" alt="Swing / Winmin — Know it. Hack it." />
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark-zh.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light-zh.svg" />
+    <img src="./assets/hero-dark-zh.svg" width="100%" alt="Swing / Winmin — Know it. Hack it." />
   </picture>
 
   <p>
-    <a href="https://bestwing.me"><b>Blog ↗</b></a>
+    <a href="https://bestwing.me"><b>博客 ↗</b></a>
     ·
     <a href="https://twitter.com/bestswngs"><b>X ↗</b></a>
     ·
-    <a href="#disclosure-archive"><b>CVEs ↓</b></a>
+    <a href="#disclosure-archive"><b>漏洞档案 ↓</b></a>
   </p>
 </div>
 
-## About
+## 关于
 
-I research vulnerabilities in the **Linux kernel**, **embedded systems**, and **network appliances**. My work spans source auditing, fuzzing, exploit development, and responsible disclosure.
+我专注于 **Linux 内核**、**嵌入式系统**与**网络设备**的漏洞研究，涉及源码审计、模糊测试、漏洞利用开发与负责任披露。
 
-CTF player with [FlappyPig](https://github.com/FlappyPig) and [r3kapig](http://r3kapig.com/).
+同时是 [FlappyPig](https://github.com/FlappyPig) 与 [r3kapig](http://r3kapig.com/) 战队成员。
 
 <!-- IMPACT_START -->
-> **85 public CVEs** across **11 ecosystems**, including **47 Linux kernel findings**.
+> **公开披露 85 个 CVE**，覆盖 **11 个研究生态**，其中包括 **47 个 Linux 内核漏洞**。
 <!-- IMPACT_END -->
 
-## Selected research
+## 精选研究
 
-- [**PackageKit TOCTOU Local Privilege Escalation**](https://bestwing.me/CVE-2026-41651-analysis.html)<br>
-  <sub>Linux · TOCTOU · Local privilege escalation</sub>
+- [**PackageKit TOCTOU 本地提权漏洞分析**](https://bestwing.me/CVE-2026-41651-analysis.html)<br>
+  <sub>Linux · TOCTOU · 本地提权</sub>
 
-- [**Xiaomi: From ADB Service Call to Bootloader Unlock**](https://bestwing.me/preempted-unlocking-xiaomi-via-two-unsanitized-strings.html)<br>
-  <sub>Android · Qualcomm · Bootloader security</sub>
+- [**小米：从 ADB Service Call 到解锁 Bootloader**](https://bestwing.me/preempted-unlocking-xiaomi-via-two-unsanitized-strings.html)<br>
+  <sub>Android · Qualcomm · 启动链安全</sub>
 
-- [**ASUS IoT: Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
-  <sub>IoT · Router · Vulnerability research</sub>
+- [**华硕 IoT 设备安全研究：Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
+  <sub>IoT · 路由器 · 漏洞研究</sub>
 
-## Focus
+## 研究方向
 
-- **Surfaces** — Linux kernel, embedded devices, IoT, and network appliances
-- **Methods** — source auditing, fuzzing, reverse engineering, and exploit development
-- **Practice** — PWN, CTF, root-cause analysis, and responsible disclosure
+- **研究对象** — Linux 内核、嵌入式设备、IoT 与网络设备
+- **研究方法** — 源码审计、模糊测试、逆向工程与漏洞利用开发
+- **实践领域** — PWN、CTF、根因分析与负责任披露
 
-## Recognition
+## 荣誉
 
-- **2025 · 1st place** — 0x300 · Tianwang Cup ITAI Critical Product Vulnerability Discovery Challenge
-- **2024 · Two 1st-place finishes** — 0x300 · Tianwang Cup ITAI Critical Product Vulnerability Discovery Challenge · Matrix Cup Hardware & Software Security Testing Competition
-- **2023 · Champion** — 跃哥我真不会啊 · Datacon Vulnerability Analysis Track<br>
-  **2nd place** — 0x300 · CSST Tianwang Cup
+- **2025 · 第一名** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛
+- **2024 · 两项第一名** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛、矩阵杯国产软硬件安全检测赛
+- **2023 · 冠军** — 跃哥我真不会啊 · Datacon 漏洞分析赛道<br>
+  **第二名** — 0x300 · CSST 天网杯
 
 <details>
-<summary><b>Earlier recognition</b> · 2018–2021</summary>
+<summary><b>早期荣誉</b> · 2018–2021</summary>
 
-- **2021 · 2nd place** — 0x300 · Inaugural ITAI Critical Product Security Challenge<br>
-  **Best Vulnerability Reproduction** — Tianfu Cup · Docker Escape & Ubuntu LPE
+- **2021 · 第二名** — 0x300 · 首届信创关键产品安全挑战赛<br>
+  **最佳漏洞复现奖** — 天府杯 · Docker Escape & Ubuntu LPE
 - **2019** — Chaitin · GeekPwn & HUAWEI Smart Device Security Challenge · MAXHUB Exploit
-- **2018 · Best Demo Award** — Piggy mine · GeekPwn
+- **2018 · 最佳演示奖** — Piggy mine · GeekPwn
 
 </details>
 
-## Publications
+## 出版物
 
-- **CTF Training Camp: Technical Deep Dives, Problem-Solving Methods, and Competition Skills** — *Author*
-- **Hardware System Fuzzing: Technologies and Case Studies** — *Translator*
+- **《CTF特训营：技术详解、解题方法与竞赛技巧》** — *作者*
+- **《硬件系统模糊测试技术解密与案例分析》** — *译者*
 
-## Disclosure archive
+<a id="disclosure-archive"></a>
 
-The archive below is synchronized from [bestwing.me](https://bestwing.me/about/) every week.
+## 漏洞档案
+
+以下漏洞档案每周从 [bestwing.me](https://bestwing.me/about/) 自动同步。
 
 <details>
-<summary><b>Browse the complete CVE index</b> · grouped by vendor</summary>
+<summary><b>查看完整 CVE 索引</b> · 按厂商分类</summary>
 
 <br />
 
@@ -101,15 +103,15 @@ The archive below is synchronized from [bestwing.me](https://bestwing.me/about/)
 
 <!-- CVE_END -->
 
-### Acknowledgements
+### 致谢
 
-- **Synology** — [2021 Security Bounty Acknowledgement](https://www.synology.com/zh-tw/security/bounty_program#acknowledgement)
-- **OPPO** — 2021 IoT Bug Bounty [Top 18](https://security.oppo.com/cn/charts)
+- **Synology** — [2021 安全奖励计划致谢](https://www.synology.com/zh-tw/security/bounty_program#acknowledgement)
+- **OPPO** — 2021 IoT 安全奖励计划 [Top 18](https://security.oppo.com/cn/charts)
 
 </details>
 
 ---
 
 <div align="center">
-  <sub><b>KNOW IT. HACK IT.</b> · Research responsibly. Disclose clearly. · <a href="https://bestwing.me">bestwing.me</a></sub>
+  <sub><b>KNOW IT. HACK IT.</b> · 负责任地研究，清晰地披露。 · <a href="https://bestwing.me">bestwing.me</a></sub>
 </div>

@@ -1,6 +1,6 @@
 <svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Swing — Know it. Hack it.</title>
-  <desc id="desc">Winmin's vulnerability research profile, focused on PWN, reverse engineering, kernel, IoT, and CVEs.</desc>
+  <desc id="desc">Winmin 的漏洞研究主页，关注 PWN、逆向工程、内核、IoT 与 CVE。</desc>
   <defs>
     <clipPath id="clip"><rect x="1" y="1" width="1198" height="298" rx="21"/></clipPath>
     <style>
@@ -22,7 +22,7 @@
     <g transform="translate(52 74)">
       <text class="sans" x="0" y="68" fill="#2CFF76" font-size="72" font-weight="790" letter-spacing="-4.8">KNOW IT.</text>
       <text class="sans" x="0" y="142" fill="#F2F4F2" font-size="72" font-weight="790" letter-spacing="-4.8">HACK IT.</text>
-      <text class="mono" x="4" y="181" fill="#9AA19C" font-size="12" font-weight="650" letter-spacing="1.5">VULNERABILITY RESEARCHER · CTF PLAYER</text>
+      <text class="sans" x="4" y="181" fill="#9AA19C" font-size="13" font-weight="600" letter-spacing="1">漏洞研究员 · CTF 选手</text>
     </g>
 
     <!-- A restrained fault-line mark: observe, isolate, resolve. -->

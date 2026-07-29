@@ -27,6 +27,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git diff --quiet && exit 0
-          git add README.md cve-count.json
+          git add README.md README.zh-CN.md cve-count.json
           git commit -m "chore: auto-update CVE list from blog"
           git push
