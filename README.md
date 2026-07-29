@@ -30,14 +30,14 @@ CTF player with [FlappyPig](https://github.com/FlappyPig) and [r3kapig](http://r
 
 ## Selected research
 
-- [**PackageKit TOCTOU Local Privilege Escalation**](https://bestwing.me/CVE-2026-41651-analysis.html)<br>
-  <sub>Linux · TOCTOU · Local privilege escalation</sub>
+- [**When ASUS IoT Devices Play Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
+  <sub>Off-By-One Conference · ASUS routers · IoT security</sub>
 
-- [**Xiaomi: From ADB Service Call to Bootloader Unlock**](https://bestwing.me/preempted-unlocking-xiaomi-via-two-unsanitized-strings.html)<br>
-  <sub>Android · Qualcomm · Bootloader security</sub>
+- [**Enterprise Security Appliance Vulnerability Analysis and Exploitation**](https://bestwing.me/Security-Equipment-Vulnerability-Research.html)<br>
+  <sub>Secure Optical Network Cybersecurity Forum · Xianzhi Security Salon · Gateway / Firewall / VPN</sub>
 
-- [**ASUS IoT: Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
-  <sub>IoT · Router · Vulnerability research</sub>
+- [**Vigor2960 Memoirs: Pursuit of the Elusive 0day & 1day**](https://bestwing.me/Vigor2960-Memoirs-Pursuit-of-the-Elusive.html)<br>
+  <sub>Changsha CPS Security Salon · DrayTek · Vigor2960</sub>
 
 ## Focus
 

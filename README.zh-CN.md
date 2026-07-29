@@ -30,14 +30,14 @@
 
 ## 精选研究
 
-- [**PackageKit TOCTOU 本地提权漏洞分析**](https://bestwing.me/CVE-2026-41651-analysis.html)<br>
-  <sub>Linux · TOCTOU · 本地提权</sub>
+- [**议题分享：When ASUS IoT Devices Play Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
+  <sub>Off-By-One Conference · ASUS 路由器 · IoT 安全</sub>
 
-- [**小米：从 ADB Service Call 到解锁 Bootloader**](https://bestwing.me/preempted-unlocking-xiaomi-via-two-unsanitized-strings.html)<br>
-  <sub>Android · Qualcomm · 启动链安全</sub>
+- [**议题分享：企业设备安全设备漏洞分析与利用**](https://bestwing.me/Security-Equipment-Vulnerability-Research.html)<br>
+  <sub>“安全光网”网络安全技术论坛 · 先知沙龙 · 网关 / 防火墙 / VPN</sub>
 
-- [**华硕 IoT 设备安全研究：Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
-  <sub>IoT · 路由器 · 漏洞研究</sub>
+- [**议题分享：Vigor2960 Memoirs — Pursuit of the Elusive 0day & 1day**](https://bestwing.me/Vigor2960-Memoirs-Pursuit-of-the-Elusive.html)<br>
+  <sub>长沙信息物理系统安全技术沙龙 · DrayTek · Vigor2960</sub>
 
 ## 研究方向
 
