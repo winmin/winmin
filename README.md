@@ -97,12 +97,12 @@ The archive below is synchronized from [bestwing.me](https://bestwing.me/about/)
 
 <!-- CVE_END -->
 
-</details>
-
 ### Acknowledgements
 
 - **Synology** — [2021 Security Bounty Acknowledgement](https://www.synology.com/zh-tw/security/bounty_program#acknowledgement)
 - **OPPO** — 2021 IoT Bug Bounty [Top 18](https://security.oppo.com/cn/charts)
+
+</details>
 
 ---
 
