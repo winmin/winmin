@@ -1,32 +1,76 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=36BCF7FF&width=500&lines=Security+Researcher;CTF+Player+%40FlappyPig+%40r3kapig;Focus+on+Vulnerability+Discovering)](https://bestwing.me)
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
+    <img src="./assets/hero-dark.svg" width="100%" alt="Swing / Winmin — Know it. Hack it." />
+  </picture>
 
-![CVEs](https://img.shields.io/badge/CVEs-85+-red?style=for-the-badge)
-![](https://img.shields.io/badge/PWN-Reverse-blue?style=for-the-badge)
-[![Blog](https://img.shields.io/badge/Blog-bestwing.me-green?style=for-the-badge)](https://bestwing.me)
-[![Twitter](https://img.shields.io/badge/Twitter-@bestswngs-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/bestswngs)
+  <p>
+    <a href="https://bestwing.me"><b>Blog ↗</b></a>
+    ·
+    <a href="https://twitter.com/bestswngs"><b>X ↗</b></a>
+    ·
+    <a href="#disclosure-archive"><b>CVEs ↓</b></a>
+  </p>
+</div>
 
-## About Me
+## About
 
-- Security Researcher | CTF Player @[FlappyPig](https://github.com/FlappyPig) @[r3kapig](http://r3kapig.com/)
-- Focus on **Vulnerability Discovering** | Active in **CTF, PWN/Reverse**
+I research vulnerabilities in the **Linux kernel**, **embedded systems**, and **network appliances**. My work spans source auditing, fuzzing, exploit development, and responsible disclosure.
 
-### Publications
+CTF player with [FlappyPig](https://github.com/FlappyPig) and [r3kapig](http://r3kapig.com/).
 
-- *CTF特训营:技术详解、解题方法与竞赛技巧* - Author
-- *硬件系统模糊测试技术解密与案例分析* - Translator
+<!-- IMPACT_START -->
+> **85 public CVEs** across **11 ecosystems**, including **47 Linux kernel findings**.
+<!-- IMPACT_END -->
 
-## Awards
+## Selected research
 
-| Year | Team | Award |
-|------|------|-------|
-| 2025 | 0x300 | 天网杯信创关键产品漏洞挖掘挑战赛 1st |
-| 2024 | 0x300 | 天网杯信创关键产品漏洞挖掘挑战赛 1st & 矩阵杯国产软硬件安全检测赛 1st |
-| 2023 | 跃哥我真不会啊 / 0x300 | Datacon 漏洞分析赛道 Champion / CSST 天网杯 2nd |
-| 2021 | 0x300 | 首届信创关键产品安全挑战赛 2nd / 天府杯最佳漏洞复现奖 / 天府杯 Docker Escape & Ubuntu LPE |
-| 2019 | Chaitin | GeekPwn & HUAWEI Smart Device Security Challenge / MAXHUB Exploit |
-| 2018 | Piggy mine | GeekPwn Best Demo Award |
+- [**PackageKit TOCTOU Local Privilege Escalation**](https://bestwing.me/CVE-2026-41651-analysis.html)<br>
+  <sub>Linux · TOCTOU · Local privilege escalation</sub>
 
-## CVEs
+- [**Xiaomi: From ADB Service Call to Bootloader Unlock**](https://bestwing.me/preempted-unlocking-xiaomi-via-two-unsanitized-strings.html)<br>
+  <sub>Android · Qualcomm · Bootloader security</sub>
+
+- [**ASUS IoT: Hide-and-Seek with Security**](https://bestwing.me/offbyone-conference-when-asus-iot-devices-play-hide-and-seek-with-security.html)<br>
+  <sub>IoT · Router · Vulnerability research</sub>
+
+## Focus
+
+- **Surfaces** — Linux kernel, embedded devices, IoT, and network appliances
+- **Methods** — source auditing, fuzzing, reverse engineering, and exploit development
+- **Practice** — PWN, CTF, root-cause analysis, and responsible disclosure
+
+## Recognition
+
+- **2025 · 1st place** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛
+- **2024 · Two 1st-place finishes** — 0x300 · 天网杯信创关键产品漏洞挖掘挑战赛、矩阵杯国产软硬件安全检测赛
+- **2023 · Champion** — 跃哥我真不会啊 · Datacon 漏洞分析赛道<br>
+  **2nd place** — 0x300 · CSST 天网杯
+
+<details>
+<summary><b>Earlier recognition</b> · 2018–2021</summary>
+
+- **2021 · 2nd place** — 0x300 · 首届信创关键产品安全挑战赛<br>
+  **Best Vulnerability Reproduction** — 天府杯 · Docker Escape & Ubuntu LPE
+- **2019** — Chaitin · GeekPwn & HUAWEI Smart Device Security Challenge · MAXHUB Exploit
+- **2018 · Best Demo Award** — Piggy mine · GeekPwn
+
+</details>
+
+## Publications
+
+- **《CTF特训营：技术详解、解题方法与竞赛技巧》** — *Author*
+- **《硬件系统模糊测试技术解密与案例分析》** — *Translator*
+
+## Disclosure archive
+
+The archive below is synchronized from [bestwing.me](https://bestwing.me/about/) every week.
+
+<details>
+<summary><b>Browse the complete CVE index</b> · grouped by vendor</summary>
+
+<br />
 
 <!-- CVE_START -->
 **HUAWEI**: [CVE-2019-5268](https://www.huawei.com/cn/psirt/security-advisories/huawei-sa-20191113-01-homerouter-cn) | [CVE-2019-5269](https://www.huawei.com/cn/psirt/security-advisories/huawei-sa-20191113-01-homerouter-cn)
@@ -53,13 +97,15 @@
 
 <!-- CVE_END -->
 
-**Synology**: [2021 Acknowledgement](https://www.synology.com/zh-tw/security/bounty_program#acknowledgement)
-
-**OPPO**: 2021 IoT Bug Bounty [Top 18](https://security.oppo.com/cn/charts)
-
-<details>
-  <summary><b><img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> GitHub Stats</b></summary>
-
-[![Github Stats](https://github-readme-stats.vercel.app/api?username=winmin&include_orgs=true&hide_title=false&hide_border=true&show_icons=true&include_all_commits=true&line_height=20&bg_color=0,EC6C6C,FFD479,FFFC79,73FA79&theme=default)](https://github.com/winmin)
-
 </details>
+
+### Acknowledgements
+
+- **Synology** — [2021 Security Bounty Acknowledgement](https://www.synology.com/zh-tw/security/bounty_program#acknowledgement)
+- **OPPO** — 2021 IoT Bug Bounty [Top 18](https://security.oppo.com/cn/charts)
+
+---
+
+<div align="center">
+  <sub><b>KNOW IT. HACK IT.</b> · Research responsibly. Disclose clearly. · <a href="https://bestwing.me">bestwing.me</a></sub>
+</div>

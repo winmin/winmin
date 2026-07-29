@@ -151,7 +151,17 @@ def generate_cve_section(vendors):
     return total, "\n".join(lines)
 
 
-def update_readme(readme_path, cve_section, total):
+def generate_impact_summary(total, vendor_counts):
+    """Generate the compact research-impact sentence shown near the profile intro."""
+    active_vendors = sum(1 for count in vendor_counts.values() if count)
+    kernel_count = vendor_counts.get("Linux Kernel", 0)
+    return (
+        f"> **{total} public CVEs** across **{active_vendors} ecosystems**, "
+        f"including **{kernel_count} Linux kernel findings**."
+    )
+
+
+def update_readme(readme_path, cve_section, total, vendor_counts=None):
     with open(readme_path, "r") as f:
         content = f.read()
 
@@ -166,6 +176,17 @@ def update_readme(readme_path, cve_section, total):
         f"\\g<1>{total}\\2",
         content,
     )
+
+    # Update the concise impact line used by the redesigned profile.
+    if vendor_counts is not None:
+        impact_pattern = r"(<!-- IMPACT_START -->).*?(<!-- IMPACT_END -->)"
+        impact = generate_impact_summary(total, vendor_counts)
+        content = re.sub(
+            impact_pattern,
+            f"\\1\n{impact}\n\\2",
+            content,
+            flags=re.DOTALL,
+        )
 
     with open(readme_path, "w") as f:
         f.write(content)
@@ -200,7 +221,7 @@ def main():
     print("Updated cve-count.json")
 
     # Update README
-    update_readme(readme_path, cve_section, total)
+    update_readme(readme_path, cve_section, total, vendor_counts)
     print("Updated README.md")
 
 

@@ -1,0 +1,60 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Swing — Know it. Hack it.</title>
+  <desc id="desc">Winmin's vulnerability research profile, focused on PWN, reverse engineering, kernel, IoT, and CVEs.</desc>
+  <defs>
+    <clipPath id="clip"><rect x="1" y="1" width="1198" height="298" rx="21"/></clipPath>
+    <style>
+      .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mono { font-family: "SFMono-Regular", "Cascadia Code", "Liberation Mono", Consolas, monospace; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="300" fill="#070A08"/>
+
+    <g class="mono" font-size="11" font-weight="650" letter-spacing="1.7">
+      <text x="52" y="39" fill="#2CFF76">[SWING/]</text>
+      <text x="147" y="39" fill="#777E79">SECURITY RESEARCH LOG</text>
+      <text x="1148" y="39" fill="#777E79" text-anchor="end">@WINMIN · BESTWING.ME ↗</text>
+    </g>
+    <path d="M52 57H1148" stroke="#202621"/>
+
+    <g transform="translate(52 74)">
+      <text class="sans" x="0" y="68" fill="#2CFF76" font-size="72" font-weight="790" letter-spacing="-4.8">KNOW IT.</text>
+      <text class="sans" x="0" y="142" fill="#F2F4F2" font-size="72" font-weight="790" letter-spacing="-4.8">HACK IT.</text>
+      <text class="mono" x="4" y="181" fill="#9AA19C" font-size="12" font-weight="650" letter-spacing="1.5">VULNERABILITY RESEARCHER · CTF PLAYER</text>
+    </g>
+
+    <!-- A restrained fault-line mark: observe, isolate, resolve. -->
+    <g stroke-linecap="round" stroke-linejoin="round">
+      <path d="M706 92H892L908 80H1148" stroke="#283029"/>
+      <path d="M706 116H910L924 126H1148" stroke="#38423A"/>
+      <path d="M706 140H882L902 116H1148" stroke="#2CFF76" stroke-width="2"/>
+      <path d="M706 164H925L941 151H1148" stroke="#38423A"/>
+      <path d="M706 188H898L918 207H1148" stroke="#283029"/>
+      <path d="M706 212H916L932 225H1148" stroke="#38423A"/>
+      <path d="M902 73V221" stroke="#2CFF76" stroke-opacity=".24" stroke-dasharray="3 7"/>
+      <circle cx="902" cy="116" r="6" fill="#2CFF76" stroke="#070A08" stroke-width="4"/>
+    </g>
+
+    <g class="mono" font-size="9" font-weight="650" letter-spacing="1.4">
+      <text x="706" y="76" fill="#656C67">FAULT / TRACE</text>
+      <text x="1148" y="247" fill="#656C67" text-anchor="end">UNDERSTAND → DISCLOSE → FIX</text>
+    </g>
+
+    <g class="mono" transform="translate(706 258)" font-size="10" font-weight="650" letter-spacing="1.4">
+      <text x="0" y="0" fill="#2CFF76">PWN</text>
+      <text x="41" y="0" fill="#444B46">/</text>
+      <text x="58" y="0" fill="#A9AFAB">REVERSE</text>
+      <text x="134" y="0" fill="#444B46">/</text>
+      <text x="151" y="0" fill="#A9AFAB">KERNEL</text>
+      <text x="216" y="0" fill="#444B46">/</text>
+      <text x="233" y="0" fill="#A9AFAB">IoT</text>
+      <text x="266" y="0" fill="#444B46">/</text>
+      <text x="283" y="0" fill="#A9AFAB">CVE</text>
+    </g>
+
+    <rect y="295" width="1200" height="5" fill="#2CFF76"/>
+  </g>
+  <rect x="1" y="1" width="1198" height="298" rx="21" stroke="#283029" stroke-width="2"/>
+</svg>
