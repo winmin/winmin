@@ -65,8 +65,8 @@ CTF player with [FlappyPig](https://github.com/FlappyPig) and [r3kapig](http://r
 ## Publications
 
 - **CTF Training Camp: Technical Deep Dives, Problem-Solving Methods, and Competition Skills** — *Author*
-- **Fuzzing Against the Machine** — *Translator*<br>
-  <sub>Automate vulnerability research with emulated IoT devices on QEMU</sub>
+- **Fuzzing Against the Machine**<br>
+  <sub>Automate vulnerability research with emulated IoT devices on QEMU</sub> — *Translator*
 
 ## Disclosure archive
 
